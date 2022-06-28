@@ -1,0 +1,34 @@
+
+CREATE TABLE LOGIN (
+  USERNAME varchar(300) NOT NULL primary key,
+  PASSWORD varchar(300) NOT NULL ,
+  FIRSTNAME varchar(300) NOT NULL,
+  LASTNAME varchar(300) NOT NULL,
+  USERTYPE varchar(100) NOT NULL
+);
+
+
+
+INSERT INTO LOGIN  VALUES
+('admin1', 'admin1', 'Ali', 'Ahmad',  'ADMIN'),
+('admin', 'admin', 'Usman', 'Ali', 'ADMIN');
+
+
+
+
+
+
+CREATE TABLE ACCOUNT (
+ACCOUNTNUMBER varchar(300) NOT NULL primary key,
+CLIENTUSERNAME  varchar(300) NOT NULL ,
+CREATEDATE date NOT NULL,
+ACCOUNTTYPEID int NOT NULL,
+TRANSFERLIMIT double default 10000,
+WITHDRAMLIMIT double default 10000,
+STATUS varchar(100) default 'ACTIVE'
+
+);
+
+
+
+
